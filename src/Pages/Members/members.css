@@ -1,0 +1,38 @@
+.profile-wrapper{
+    flex-direction: revert;
+    justify-content: start;
+    gap: 10px;
+}
+
+.member-card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.form-action{
+    margin: 10px;
+    justify-content: start;
+}
+
+.upload-photo{
+    line-height: 0;
+}
+
+.upload-photo-wrapper{
+    display: flex;
+    margin: 10px;
+}
+
+.upload-photo-wrapper img{
+    width: 100px;
+}
+
+.upload-photo-wrapper div{
+    display: flex;
+    align-items: start;
+}
+
+.form-group-col button{
+    margin-left: 10px;
+}
