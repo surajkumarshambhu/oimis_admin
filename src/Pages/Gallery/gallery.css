@@ -1,0 +1,83 @@
+.gallery-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.gallery-content>div{
+    display: grid;
+    gap: 24px;
+}
+.gallery-content>div>div{
+    position: relative;
+}
+.gallery-content>div>div:hover > .image-action{
+    display: flex;
+}
+.image-action{
+    position: absolute;
+    bottom: 10px;
+    padding: 12px;
+    display: none;
+    left: 12px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.gallery-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+}
+
+.model{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%), 0 4px 8px 0 transparent;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-photo-form-group-col label{
+    margin: 10px 10px 10px;
+}
+
+.upload-photo-form-group-col{
+    display: flex;
+    flex-direction:column;
+    width:100%;
+}
+
+.upload-photo-form-control{
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border: 1px solid #DCDFE8;
+    font-size: 14px;
+    color: #676E8A;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 10px;
+    margin: 0px 0px 10px 10px;
+    width:80%;
+}
+
+.upload-photo-form-group-col button{
+    margin-left: 10px;
+}
+
+.image-container{
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%), 0 4px 8px 0 transparent;
+}

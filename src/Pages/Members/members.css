@@ -22,10 +22,11 @@
 .upload-photo-wrapper{
     display: flex;
     margin: 10px;
+    align-items: start;
 }
 
 .upload-photo-wrapper img{
-    width: 100px;
+    width: 130px;
 }
 
 .upload-photo-wrapper div{

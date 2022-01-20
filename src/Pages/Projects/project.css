@@ -6,8 +6,7 @@
 }
 
 .project-list-wrapper{
-    margin: 10px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;

@@ -94,7 +94,7 @@ const Sidebar = () =>{
                     </div>
                 </div>
                 <div className="subsDiv">
-                    <div onClick={()=>handleLinks(1)} className="hover-class">
+                    <div onClick={()=>handleLinks(2)} className="hover-class">
                         <div className="sub">
                             <a href="#">
                                 <span className="icon"><GiIcons.GrUserSettings></GiIcons.GrUserSettings></span>
@@ -105,9 +105,25 @@ const Sidebar = () =>{
                             <span className="icon">{ArrowInactiveSvg}</span>
                         </div>
                     </div>
-                    <div style={links === 1 ? styles.linkShow : styles.linkHide} className="subLinks">
+                    <div style={links === 2 ? styles.linkShow : styles.linkHide} className="subLinks">
                         <a href="/members">- List Members</a>
                         <a href="/add-members">- Add Members</a>
+                    </div>
+                </div>
+                <div className="subsDiv">
+                    <div onClick={()=>handleLinks(3)} className="hover-class">
+                        <div className="sub">
+                            <a href="#">
+                                <span className="icon"><GiIcons.GrGallery></GiIcons.GrGallery></span>
+                                <span style={active === true ? styles.active : styles.notActive}>Online Gallery</span>
+                            </a>
+                        </div>
+                        <div style={active === true ? styles.active : styles.notActive}>
+                            <span className="icon">{ArrowInactiveSvg}</span>
+                        </div>
+                    </div>
+                    <div style={links === 3 ? styles.linkShow : styles.linkHide} className="subLinks">
+                        <a href="/gallery">- Online Gallery</a>
                     </div>
                 </div>
                 <div className="noSub">
