@@ -1,5 +1,5 @@
-export const BASEURL = 'http://127.0.0.1:8000/api/';
-// export const BASEURL = 'http://admin.cnwworkshop.in/api/';
+// export const BASEURL = 'http://127.0.0.1:8000/api/';
+export const BASEURL = 'http://admin.cnwworkshop.in/api/';
 export const URL = 'http://admin.cnwworkshop.in/';
 
 export const ADMINURL = 'admin-login';
