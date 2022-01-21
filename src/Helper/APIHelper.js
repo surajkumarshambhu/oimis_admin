@@ -2,9 +2,14 @@ import * as CONSTANT from '../Helper/Constant';
 
 export function ApiHelper(url, data = {}, method = 'GET') {
     let bearer ='';
-    if (localStorage.getItem("user") !== null) {
-        let usrData = JSON.parse(localStorage.getItem('user') ?? "");
-        bearer = 'Bearer '+ usrData.data.user.token ;
+    if (url.indexOf("login") !== -1){
+
+    }
+    else{
+        if (localStorage.getItem("user") !== null) {
+            let usrData = JSON.parse(localStorage.getItem('user') ?? "");
+            bearer = 'Bearer '+ usrData.data.user.token ;
+        }
     }
     return fetch(CONSTANT.BASEURL+url, {  // Return promise
         method: method,
