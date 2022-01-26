@@ -59,7 +59,7 @@ function Gallery() {
             }
         })
         .then(res=>{
-            if (res.success === true){
+            if (res.data.success === true){
                 setLoader(false)
                 handleClose()
                 setFormData({
@@ -83,7 +83,6 @@ function Gallery() {
             file:e.target.files[0],
             id:'0'
         })
-        console.log(fileData);
     }
 
     function handle(e){

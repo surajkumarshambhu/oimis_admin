@@ -82,3 +82,9 @@ p{
 label{
    margin: 10px 10px 10px;
 }
+
+.loader-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
