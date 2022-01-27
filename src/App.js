@@ -10,17 +10,10 @@ import Addproject from './Pages/Projects/Addproject';
 import Projectslist from './Pages/Projects/Projectslist';
 import Login from './Components/Authentication/Login'
 import Protectedroutes from './Helper/Protectedroutes';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 
 function App() {
-  const styles={
-    active:{
-        
-    },
-    notActive:{
-        display: "block",
-    },
-  }
 
   const location = useLocation();
 
@@ -41,6 +34,7 @@ function App() {
               <Route path="/add-members" element={<Addmembers />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/add-to-gallery" element={<Addtogallery />} />
+              <Route path="/dashboard" element={<Dashboard />} />
           </Route> 
       </Routes>
     </div>

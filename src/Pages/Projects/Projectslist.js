@@ -141,8 +141,8 @@ function Projectslist() {
                             <TableBody>
                             {projectListArray.map((row,key) => ( 
                                 <TableRow key={key}>
-                                <TableCell>520610021</TableCell>
-                                <TableCell>1st may, 2020</TableCell>
+                                <TableCell>{row.project_name}</TableCell>
+                                <TableCell>{row.project_description}</TableCell>
                                 <TableCell>
                                     <div className='flex flex-direction-row flex-gap-10'>
                                         <button className='cardsBoxShadow btn'>

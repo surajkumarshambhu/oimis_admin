@@ -1,0 +1,115 @@
+.project-list-wrapper{
+    grid-area: main;
+    padding: 10px;
+    height: calc(100vh - 64px);
+    overflow-y: scroll;
+}
+
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about{
+   
+}
+#about .center h4{
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    letter-spacing: 1.2px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+#about h2{
+    font-size: 2em;
+    color: var(--tertiary);
+}
+#about img{
+    max-width: 512px;
+    box-shadow: 0px 4px 24px 0px #ebebeb;
+    border: 4px solid #fff;
+    width: 100%;
+}
+#about .center{
+    margin-bottom: 48px;
+    DISPLAY: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.about-content > div > svg{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    display: none;
+    cursor: pointer;
+}
+
+.about-content > div:hover > .show{
+    display: block;
+}
+
+
+.about-content > div > img{
+    display: block;
+}
+
+.about-content > div{
+    position: relative;
+}
+
+.about-content h3{
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+.about-content i{
+    line-height: 1.4;
+    color: var(--text);
+}
+.about-list>div{
+    display: grid;
+    grid-template-columns: max-content auto;
+    margin-top: 32px;
+    grid-gap: 16px;
+    gap: 16px;
+}
+#about svg{
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    color: var(--tertiary);
+    box-shadow: 0px 4px 8px 2px #ebebeb;
+    border-radius: 40px;
+    padding: 16px;
+}
+.about-list h4{
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.form-control-textarea {
+    height: 40px;
+    line-height: 20px;
+    background: #fff;
+    border: 1px solid #DCDFE8;
+    font-size: 14px;
+    color: #676E8A;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  form button{
+      margin: 10px;
+  }

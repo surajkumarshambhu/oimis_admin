@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState } from 'react'
 import './members.css'
 import * as CONSTANT from '../../Helper/Constant';
 import axios from 'axios'
@@ -16,7 +16,6 @@ function Addmembers() {
     const [profileImage, setProfileImage] = useState({
         file: UserIcon
     })
-    const [profileImageId, setProfileImageId] = useState(0)
     const [formData,setFormData] = useState({
         id:'',
         first_name:'',
@@ -119,6 +118,7 @@ function Addmembers() {
         fd.append("request[file]",fileData.file,fileData.file.name)
         fd.append("request[doc_type]",documentFormData.doc_type)
         fd.append("request[document_category]",documentFormData.document_category)
+        fd.append("request[flag]",false)
         axios.post(CONSTANT.BASEURL + 'admin/upload-document',fd,{
             headers: {
                 'AcceptLanguage': 'en_US',

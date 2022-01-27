@@ -71,7 +71,7 @@ const Sidebar = () =>{
             </div>
             <div className="links">
                 <div className="noSub">
-                    <a href="/Dashboard">
+                    <a href="/dashboard">
                         <span className="icon"><GiIcons.GrDashboard></GiIcons.GrDashboard></span>
                         <span style={active === true ? styles.active : styles.notActive}>Dashboard</span>
                     </a>
